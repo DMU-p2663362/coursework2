@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>COURSEWORK 2</title>
+
+<link rel="stylesheet" href="css\stylesheet.css">
+
+<!--This scripts is borrowed for the jbox used on this page!-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+<div class="header, logo">
+
+  <img class="logo" src="image\website logo.png" alt="logo">
+
+<h1> LEICESTER NIGHTLIFE </h1>
+
+</div>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<center>
+
+<!-- The nav is kept simplistic and minimal, as it is a nice contrast from the bold and flashy logo and header above it !-->
+<nav>
+  <a href="home.html">HOME</a>
+
+  <a href="secondpage.html">MOSH</a>
+
+  <a href="thirdpage.html">REPUBLIC</a>
+
+  <a href="fourthpage.html">BASEMENT</a>
+
+  <a href="contact.html">CONTACT US</a>
+</nav>
+
+<!-- Regular breaks are included throughout the whole website as to avoid the website being clustered !-->
+<br> <br> <br> <br> <br>
+
+
+<!-- The jbox element !-->
+<div id="myModal">CLICK HERE TO FIND OUT MORE ABOUT THE WEBSITE!</div>
+
+<!-- The height and width elements are adjusted in order to fit the text comfortably without too much excess space !-->
+  <script>
+
+  new jBox('Modal', {
+      width: 300,
+      height: 130,
+      attach: '#myModal',
+      title: 'ABOUT',
+      content: '<i>During my time in Leicester, I have experienced a vibrant array of nightlife, and wish to share with everyone the ins and outs of where to go, and where to avoid in this great city - Jasper</i>'
+  });
+     </script>
+
+<center>
+
+<br> <br> <br> <br> <br>
+
+<!-- Transitions are used here to add movement to the front page, as well as show image sof the different places being talked about on the site !-->
+<div class="post images">
+
+
+  <style>
+
+  .image{
+    width: 400px;
+    height: 300px;
+    transition: width 1s, height 1s;
+  }
+
+  .image:hover{
+    width: 500px; height: 400px
+  }
+
+
+  </style>
+
+
+  <img class="image" src="image\moshthumbnail.jpg" alt="mosh thumbnail">
+  <img class="image" src="image\republicthumbnail.jpg" alt="republic thumbnail">
+  <img class="image" src="image\basementthumbnail.jpg" alt="basement thumbnail">
+
+
+</div>
+</center>
+<br> <br> <br> <br> <br> <br> <br>
+
+
+<h2> ABOUT THE CITY: </h2>
+
+<video controls muted width="50%" poster="image\162287-Leicestershire-County.jpg">
+  <source src="video\Leicester UK. Things to do in Leicester..mp4" type='video/mp4' />
+  <p>Your browser does not support the video element. Please click <a href='video\Leicester UK. Things to do in Leicester..mp4'>here</a> to download an mp4 of the video.</p>
+<video>
+
+  <br> <br> <br>
+
+<footer>P2663362</footer>
+  </body>
+</html>

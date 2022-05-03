@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+
+    <title>Contact Page</title>
+
+<link rel="stylesheet" href="css\stylesheet.css">
+
+  </head>
+  <body>
+
+    <div class="header, logo">
+
+      <img class="logo" src="image\website logo.png" alt="logo">
+
+    <h1> LEICESTER NIGHTLIFE </h1>
+
+    </div>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+    <div class="container">
+      <div style="text-align:center">
+        <!-- As also stated in the CSS comments, this code was implemented from W3 schools, as their contact page turned out to be more proficisntly made,
+        compared to other self-designed models !-->
+        <h2>Contact Us</h2>
+
+        <!-- The Nav bar is moved to below the page heading, as it fit better with the overqall design of the pa !-->
+        <nav>
+          <a href="home.html">HOME</a>
+
+          <a href="secondpage.html">MOSH</a>
+
+          <a href="thirdpage.html">REPUBLIC</a>
+
+          <a href="fourthpage.html">BASEMENT</a>
+
+          <a href="contact.html">CONTACT US</a>
+        </nav>
+
+        <br>
+
+<!-- The majority of the text seen on the contact page is original, and not taken from the default code!-->
+        <p class="p2">Fancy contacting us? Do it here:</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <!-- A more relevant image is used !-->
+          <img src="image\mosh picture 2.jfif" style="width:25% height:25%">
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+              <select id="country" name="country">
+
+                <!-- The UK is brough to the top of the options tab for countries as the website would be most frequented by UK natives !-->
+              <option value="uk">UK</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+<br>
+
+<footer> P2663362 </footer>
+  </body>
+</html>

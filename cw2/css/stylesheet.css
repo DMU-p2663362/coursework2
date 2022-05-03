@@ -1,0 +1,197 @@
+
+/** The purple colour in the logo/header is used throughout as the main colour in the house style, as it is eye catching and colourful**/
+h1 {
+  color: #b598f6; font-size: 6em; float: left;  font-family: "Lucida Console"; monospace;
+}
+
+/** The font 'Lucida Console' is used in order to give the website a modern look**/
+h2 {
+  color: #b598f6; font-size: 50px; font-family: "Lucida Console"; monospace; text-align: center;
+}
+
+/** An animation is used on this title, creating a light strobe like effect, like you would see in the club itself. it also creates a bit of varience in the style **/
+h2.leftheading {
+  text-align: left; font-size: 100px; padding-left: 20px; font-weight: bold;
+  animation-name: colourShift;
+  animation-duration: 8s;
+/** The infinite animation count is used to keep it in a constant loop**/
+  animation-iteration-count: infinite;
+}
+
+/** A varience in headings is used throughout in order to keep the website design interesting, and less stale**/
+h2.centreheading {
+  font-size: 100px; font-weight: bold; text-align: center;
+}
+
+h3 {
+  color: #b598f6; font-size: 30px; font-family: "Lucida Console"; monospace; text-align: center;
+}
+
+/**Padding is often used on elements, as to not cluster all of them together, making the website's appearence look cramped**/
+h3.subheading {
+ padding: 20px;
+}
+
+/**specific padding (padding-left) is used with certain elements in order to keep thwm away from the very edge of the webpage boarders, as this can look bad and unprofessional**/
+p{
+  color: white; font-size: 25px; text-align: left; padding-left: 20px;
+}
+
+/** Text boxes are used to contain the text to a certain area, and help in creating a more structured look**/
+.p1{
+  width: 900px;
+  border: 15px
+  padding: 50px;
+  float: left;
+}
+
+.p2{
+  text-align: center; color: black
+}
+
+.p3{
+  width: 350px;
+  border: 15px
+  padding: 50px;
+  float: left; padding-left: 40px; text-align: center;
+  color: white; font-size: 25px;
+}
+
+.p4{
+padding-left: 500px; font-size: 20px; color: #b598f6; font-weight: bold; font-family: "Lucida Console";
+}
+
+.p5{
+  width: 900px;
+  border: 15px
+  padding: 40px; text-align: center;
+}
+
+/** The logo itself is a PNG file, so that the transparent background is not seen**/
+.logo {
+margin-left: auto; float: left;
+}
+
+.moshlogo{
+  height: 400px; width: 500px; float: right; padding-right: 100px; padding-left: 25px
+}
+
+.moshpic3{
+  float: left; width: 45%; margin-left: 20px;
+}
+
+.leftimage{
+  width: 25%; float: left; padding: 15px;
+}
+
+.rightimage{
+  width: 25%; float: right; padding: 15px;
+}
+
+.basementlogo{
+  width: 250px; height: 250px; padding: 20px; float: left;
+}
+
+/** The same logo is used twice on this page- at either sides of the text, in order to create symmetry in the design**/
+.basementlogoright{
+  width: 250px; height: 250px; padding: 20px; float: right;
+}
+
+.basementimageleft{
+  float: left; width: 25%; padding-left: 20px;
+}
+
+.basementimagecentre{
+  width: 35%;
+}
+
+.basementimageright{
+  float: right; width: 25%; padding-right: 20px;
+}
+
+/** A black and white filtered image of a nightclub was used as the background, as it fit the theme of city nightlife,
+ but due to its muted colours, did not distract from the website itself**/
+body {
+background-image: url("../image/nightclubbackground.jpg"); background-repeat: no-repeat; background-size: cover;
+}
+
+/** This script is used to define the font size in the Jbox **/
+script {
+  font-size: 20px
+}
+
+/** White was used to stand out from the background**/
+footer{
+  text-align: center; color: white;
+}
+
+audio{
+  padding-left: 45px
+}
+
+/** This was included in order to add another variation in page design, and capture the viewer's attention**/
+marquee{
+  font-size: 100px; font-weight: bold; font-family: "Lucida Console"; background-color: #b598f6; color: white;
+}
+
+video{
+  padding-bottom: 100px;
+}
+
+/** Below is coding implemented from W3 schools, but personalised to fit the website **/
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/** The button and submit colour were changed in order to keep the house theme consistant**/
+input[type=submit] {
+  background-color: #b598f6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #CC2EFA;
+}
+
+/** The container is kept in order to make the text more readable **/
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/** This Create two columns that float next to eachother **/
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/** Responsive layout added for mobile view- when the screen is less than 600px wide,
+ make the two columns stack on top of each other instead of next to each other **/
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
